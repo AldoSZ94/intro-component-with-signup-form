@@ -1,4 +1,3 @@
-```md
 # 📝 Intro Component With Sign Up Form
 
 Proyecto de maquetación web basado en el desafío **"Intro Component With Sign Up Form"** de Frontend Mentor.  
