@@ -1,0 +1,44 @@
+@use './variables' as v;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 2rem 0;
+  font-family: v.$font-family;
+  font-size: v.$font-size;
+  color: v.$white;
+  background: v.$red-400 url('../../assets/img/bg-intro-mobile.png') center / cover no-repeat;
+
+  @media (min-width: v.$mobile) {
+    background-image: url('../../assets/img/bg-intro-desktop.png');
+  }
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+}
